@@ -4,19 +4,15 @@
 :root {
   --background: #ffffff;
   --text: #1a1a1a;
-  --primary: #3b82f6;
-  --secondary: #f3f4f6;
-  --border: #e5e7eb;
   --heading-color: #8800C8;
+  --border-color: #CDCDCD;
 }
 
 [data-theme="dark"] {
   --background: #1a1a1a;
   --text: #ffffff;
-  --primary: #60a5fa;
-  --secondary: #374151;
-  --border: #4b5563;
   --heading-color: #2FC1FF;
+  --border-color: #CDCDCD;
 }
 
 * {
@@ -27,7 +23,7 @@ body {
   background-color: var(--background);
   color: var(--text);
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -40,8 +36,8 @@ body {
   top: 1rem;
   right: 1rem;
   z-index: 1000;
-  background: var(--secondary);
-  border: 2px solid var(--border);
+  background: #f3f4f6;
+  border: 2px solid #e5e7eb;
   border-radius: 50px;
   padding: 0.5rem;
   cursor: pointer;
@@ -62,4 +58,13 @@ body {
   width: 1.5rem;
   height: 1.5rem;
   color: var(--text);
+}
+
+/* FAQ icon styles */
+.faq-icon {
+  filter: brightness(0) saturate(100%);
+}
+
+[data-theme="dark"] .faq-icon {
+  filter: brightness(0) saturate(100%) invert(1);
 }
