@@ -33,7 +33,7 @@ body {
 /* Toggle button styles */
 .theme-toggle {
   position: fixed;
-  top: 1rem;
+  top: 1.5rem;
   right: 1rem;
   z-index: 1000;
   background: #f3f4f6;
@@ -47,6 +47,15 @@ body {
   width: 3rem;
   height: 3rem;
   transition: all 0.3s ease;
+}
+
+@media (max-width: 640px) {
+  .theme-toggle {
+    top: 1rem;
+    right: 0.75rem;
+    width: 2.75rem;
+    height: 2.75rem;
+  }
 }
 
 .theme-toggle:hover {
